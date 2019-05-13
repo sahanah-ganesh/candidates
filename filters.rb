@@ -13,9 +13,28 @@ def experienced?(candidate)
   candidate[:years_of_experience] >= 2
 end
 
+# select method returns subset of original array based on criteria
 def qualified_candidates(candidates)
+  @candidates.select { |candidate| candidate.experienced?[:candidate] }
   # Your code Here
 end
 
 # More methods will go below
 
+def points?(candidate)
+  candidate[:github_points] >= 100
+end
+
+def knowledge?(candidate)
+  candidate[:languages].any? { |i| ["Ruby", "Python"].include? i }
+end
+
+def applied?(candidate)
+  candidate[:date_applied].day < 15
+end
+
+def age?(candidate)
+  candidate[:age] > 17
+end
+
+@all_methods:
