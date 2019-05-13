@@ -14,10 +14,11 @@ def experienced?(candidate)
 end
 
 # select method returns subset of original array based on criteria
+# checks true/false, returns subset of true
 def qualified_candidates(candidates)
-  @candidates.select { |candidate| candidate.experienced?[:candidate] }
-  # Your code Here
+  candidates.select { |candidate| experienced?(candidate) && points?(candidate) && knowledge?(candidate) && applied?(candidate) && age?(candidate)}
 end
+
 
 # More methods will go below
 
@@ -37,4 +38,5 @@ def age?(candidate)
   candidate[:age] > 17
 end
 
-@all_methods:
+
+

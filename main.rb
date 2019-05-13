@@ -19,3 +19,4 @@ require './filters'
 # pp knowledge?(@candidates[3])
 # pp applied?(@candidates[1])
 # pp age?(@candidates[6])
+pp qualified_candidates(@candidates)
