@@ -9,4 +9,10 @@ require './filters'
 
 # binding.pry
 
-pp @candidates
+#pp vs puts. puts = all info one line, pp = object separation
+
+# pp @candidates
+# pp experienced?(@candidates[0])
+# pp find(5)
+pp find(20)
+

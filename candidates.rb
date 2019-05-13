@@ -1,3 +1,4 @@
+# w/o this, there are is no method days (days.ago.to_date)
 require 'active_support/all'
 
 @candidates = [
